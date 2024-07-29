@@ -1,0 +1,136 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.logo{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.lbox1{
+    width: 30%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+/* padding-left:50px ; */
+}
+
+.lbox1 img{
+    width: 60px;
+    height: 60px;
+}
+
+.lbox1 h1{
+    font-weight: 800;
+    font-size: 22px;
+}
+
+.lbox2{
+
+    width: 70%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 20px;
+padding-left:50px ;
+/* border: 2px solid red; */
+
+
+}
+
+.lbox2 ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    
+}
+.lbox2 li{
+    list-style: none;
+   
+}
+
+.lbox2 a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+   
+}
+.lbox2 a:hover{
+    color:#20AD96 ;
+    cursor: pointer;
+}
+
+.toggle{
+    color: #20AD96;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+.lbox2 button{
+    padding: 10px;
+    
+    font-weight: 400;
+    font-size:  16px;
+    border-radius: 10px; 
+    cursor: pointer;
+    color: white;
+background-color: #20AD96;
+border: none;
+transition: all 0.3s ease-in-out;
+
+}
+
+.lbox2 button:hover{
+    scale: 0.9;
+    border:0px solid #20AD96;
+    border-radius: 10px; 
+    cursor: pointer;
+    color: #20AD96;
+    background-color: white;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:878px){
+    .lbox1{
+        padding-left: 30px;
+    }
+.lbox2 ul{
+
+    display: none;
+}
+
+.lbox2 button{
+    display: none;
+}
+
+.toggle{
+    display: block ;
+}
+.lbox2{
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+
+
+}
+
+  
